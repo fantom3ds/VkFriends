@@ -9,7 +9,6 @@ import com.arellomobile.mvp.MvpAppCompatActivity
 import com.arellomobile.mvp.presenter.InjectPresenter
 import com.example.vkfriends.R
 import com.example.vkfriends.adapters.FriendsAdapter
-import com.example.vkfriends.models.FriendModel
 import com.example.vkfriends.models.VKUser
 import com.example.vkfriends.presenters.FriendsPresenter
 import com.example.vkfriends.views.FriendsView
