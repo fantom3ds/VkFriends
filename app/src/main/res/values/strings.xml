@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">VkFriends</string>
+    <string name="hello_text">Приветствую, товарищ!</string>
+    <string name="login_enter">Войти</string>
+    <string name="friends_search_hint">Введите ваш запрос тут</string>
+    <string name="no_friends_notification">У вас нет друзей! Ахахахаха</string>
+    <string name="login_error_notification">Не удалось выполнить вход</string>
+    <string name="list_error_notification">Ошибка при получении списка</string>
+    <integer name="com_vk_sdk_AppId">6436285</integer>
+</resources>

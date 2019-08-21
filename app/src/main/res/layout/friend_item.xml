@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/list_item"
+        android:layout_marginTop="@dimen/margin_x1">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_user_photo"
+            android:layout_width="@dimen/avatar_size"
+            android:layout_height="@dimen/avatar_size"
+            android:src="@color/colorBlack"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/margin_x1"/>
+    <View
+            android:id="@+id/v_online_flag"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:layout_constraintEnd_toEndOf="@id/civ_user_photo"
+            app:layout_constraintBottom_toBottomOf="@id/civ_user_photo"
+            android:background="@drawable/ellipse"/>
+
+    <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Имя фамилия отчество"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintTop_toTopOf="@id/civ_user_photo"
+            app:layout_constraintStart_toEndOf="@id/civ_user_photo"
+            android:layout_marginStart="@dimen/margin_x1"/>
+
+    <TextView
+            android:id="@+id/tv_user_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintTop_toTopOf="@id/civ_user_photo"
+            app:layout_constraintStart_toEndOf="@id/tv_user_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="@dimen/margin_x1"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18.07.19 22:52:31"
+            app:layout_constraintStart_toStartOf="@id/tv_user_name"
+            app:layout_constraintTop_toBottomOf="@id/tv_user_name"
+            android:id="@+id/user_activity"/>
+
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@id/civ_user_photo"
+            android:text="статус пользователя"
+            android:textColor="@color/colorBlack"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="@id/tv_user_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/user_activity"
+            android:id="@+id/user_status"
+            />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(Полная версия сайта)"
+            app:layout_constraintBaseline_toBaselineOf="@id/user_activity"
+            app:layout_constraintStart_toEndOf="@id/user_activity"
+            android:layout_marginStart="@dimen/margin_x1"
+            />
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorGray"
+            app:layout_constraintTop_toBottomOf="@id/civ_user_photo"
+            android:layout_marginTop="@dimen/margin_x1"
+            android:layout_marginStart="@dimen/margin_x1"
+            android:layout_marginEnd="@dimen/margin_x1"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

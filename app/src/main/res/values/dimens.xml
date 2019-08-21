@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_x2">32dp</dimen>
+    <dimen name="progress_bar_size">40dp</dimen>
+    <dimen name="margin_x1">16dp</dimen>
+    <dimen name="avatar_size">60dp</dimen>
+</resources>
